@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-info">
+        <h3>ТОВАР</h3>
+        <p>Гарний багатофункціональний товар за низькою ціною</p>
+        <span class="old-price">$2000</span> <span>$1500</span><br /><br />
+        <button class="buy-button">Купити</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="order-form" class="order-form" name="order-form">
+        <h2>Оформлення замовлення</h2>
+        <label
+          >ПІБ покупця:
+          <input
+            class="required input-design"
+            id="name"
+            type="text"
+            name="full_name" /></label
+        ><span class="red-star">*</span> <span class="error-message"></span
+        ><br /><br />
+        <label
+          >Оберіть своє місто:
+          <select class="input-design" id="city" name="city">
+            <option value="none">--Виберіть своє місто--</option>
+            <option value="Київ">Київ</option>
+            <option value="Житомир">Житомир</option>
+            <option value="Одеса">Одеса</option>
+            <option value="Миколаїв">Миколаїв</option>
+            <option value="Луганськ">Луганськ</option>
+          </select> </label
+        ><br /><br />
+        <label
+          >Відділення Нової пошти:
+          <input
+            class="required input-design"
+            id="post-office"
+            type="text"
+            name="post-office"
+          />
+        </label>
+        <span class="red-star">*</span>
+        <span class="error-message"></span><br /><br />
+        <p>Спосіб оплати:</p>
+        <label
+          >Післяплата
+          <input
+            type="radio"
+            id="postPay"
+            name="payment-type"
+            value="Післяплата" /></label
+        ><br />
+        <label
+          >Карткою онлайн
+          <input
+            type="radio"
+            id="credit-card"
+            name="payment-type"
+            value="Карткою онлайн"
+        /></label>
+        <br /><br />
+        <label
+          >Будь ласка, вкажіть кількість товару:
+          <input
+            class="required input-design"
+            type="number"
+            id="quantity"
+            name="item-quantity" /></label
+        ><span class="red-star">*</span> <span class="error-message"></span
+        ><br /><br />
+        <label
+          >Коментар до замовлення:
+          <textarea
+            class="comment input-design"
+            cols="30"
+            rows="10"
+            id="comment"
+            name="comment"
+          ></textarea></label
+        ><br /><br />
+        <input
+          class="confirm-button"
+          id="orderConfirm"
+          type="submit"
+          value="Підтвердити замовлення"
+        />
+      </form>
+    </div>
+
+    <div id="orderConfirmation" class="order-confirmation"></div>
+  </body>
+  <script async src="./shop.js"></script>
+</html>

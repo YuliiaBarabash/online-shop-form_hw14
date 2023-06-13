@@ -1,0 +1,124 @@
+body {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+}
+
+.product-info {
+  padding: 20px;
+  display: grid;
+  justify-self: center;
+  width: 400px;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+}
+
+.buy-button {
+  padding: 7px;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  color: #24292e;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.buy-button:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.buy-button:focus {
+  outline: 1px transparent;
+}
+
+.confirm-button {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  color: #24292e;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.confirm-button:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.confirm-button:focus {
+  outline: 1px transparent;
+}
+
+.input-design {
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  outline: 1px solid darkolivegreen;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.order-form {
+  margin-top: 20px;
+  padding: 5px 20px;
+  justify-self: center;
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgb(193, 199, 170);
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.comment {
+  resize: none;
+}
+
+.red-star {
+  padding-left: 5px;
+  color: #9a0000;
+}
+
+.error-message {
+  padding-top: 5px;
+  display: none;
+  color: #9a0000;
+}
+
+.order-form,
+.order-confirmation {
+  display: none;
+}
+
+.order-confirmation {
+  margin-top: 20px;
+  padding: 5px 20px;
+  justify-self: center;
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgb(193, 199, 170);
+  text-align: left;
+}
